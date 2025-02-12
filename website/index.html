@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOMC Meeting Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FOMC Meeting Simulator</h1>
+    </header>
+    <section id="simulator">
+        <h2>FOMC Meeting Simulator</h2>
+        <div id="simulation-container">
+            <div class="simulation-controls">
+                <button id="startSimulation">Start New Meeting</button>
+                <div class="meeting-phases">
+                    <h3>Meeting Phases</h3>
+                    <ol>
+                        <li>Opening Remarks</li>
+                        <li>Staff Reports</li>
+                        <li>Economic Outlook</li>
+                        <li>Policy Discussion</li>
+                        <li>Voting</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="simulation-output">
+                <div id="discussion-feed"></div>
+                <div id="voting-results"></div>
+                <div id="fomc-statement"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html> 
