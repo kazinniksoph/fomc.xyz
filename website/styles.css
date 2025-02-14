@@ -161,7 +161,7 @@ header p {
 .discussion-entry {
     margin-bottom: 1rem;
     padding: 1.5rem;
-    background: #F9FAFB;  /* switched with container background */
+    background: var(--background-color);  /* Changed from #F9FAFB to white */
     border-radius: 8px;
     border: 1px solid var(--border-color);
     box-shadow: 0 2px 6px rgba(31, 45, 61, 0.05);
@@ -234,7 +234,7 @@ footer {
 .simulation-info {
     margin-top: 2rem;
     padding: 1.5rem;
-    background: #F9FAFB;
+    background: var(--background-color);  /* Changed from #F9FAFB to white */
     border-radius: 12px;
     border: 1px solid var(--border-color);
 }
@@ -244,7 +244,7 @@ footer {
 }
 
 .disclaimer {
-    background: #F9FAFB;
+    background: var(--background-color);  /* Changed from #F9FAFB to white */
     border-top: 1px solid var(--border-color);
     padding: 3rem 2rem;
     margin-top: 4rem;
@@ -277,7 +277,7 @@ footer {
 
 /* Simulator Page Specific Styles */
 .simulator-page {
-    background-color: #F9FAFB;
+    background-color: var(--background-color);  /* Changed from #F9FAFB to white */
 }
 
 .top-nav {
@@ -306,10 +306,11 @@ footer {
 }
 
 .nav-mascot {
-    width: 32px;
+    width: 32px;  /* Much smaller size for the nav bar */
     height: 32px;
     border-radius: 8px;
     margin-right: 0.75rem;
+    object-fit: cover;  /* Ensures the image maintains its aspect ratio */
 }
 
 .simulator-main {
