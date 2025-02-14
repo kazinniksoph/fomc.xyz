@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOMC Simulator - FOMC.xyz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body class="simulator-page">
+    <nav class="top-nav">
+        <div class="nav-content">
+            <a href="index.html" class="nav-logo">
+                <img src="images/mascot.png" alt="FOMC.xyz" class="nav-mascot">
+                FOMC.xyz
+            </a>
+        </div>
+    </nav>
+
+    <main class="simulator-main">
+        <div id="simulation-container">
+            <div class="simulation-controls">
+                <div class="meeting-phases">
+                    <h3>Meeting Progress</h3>
+                    <ol>
+                        <li class="phase active" data-phase="opening">Opening Remarks</li>
+                        <li class="phase" data-phase="staff">Staff Economic Report</li>
+                        <li class="phase" data-phase="outlook">Economic Outlook</li>
+                        <li class="phase" data-phase="policy">Policy Discussion</li>
+                        <li class="phase" data-phase="voting">Final Vote</li>
+                    </ol>
+                </div>
+
+                <div class="simulation-info">
+                    <h3>About the Simulator</h3>
+                    <p>This simulator uses AI to recreate FOMC meeting dynamics, incorporating real economic data and historical policy patterns.</p>
+                </div>
+            </div>
+
+            <div class="simulation-output">
+                <div id="discussion-feed">
+                    <h3>Meeting Discussion</h3>
+                    <div class="feed-content">
+                        <div class="welcome-message">
+                            Welcome to the FOMC meeting simulation. The meeting will begin momentarily...
+                        </div>
+                    </div>
+                </div>
+
+                <div id="voting-results">
+                    <h3>Voting Results</h3>
+                    <div class="results-content"></div>
+                </div>
+
+                <div id="fomc-statement">
+                    <h3>FOMC Statement</h3>
+                    <div class="statement-content"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 FOMC.xyz — <a href="https://github.com/kazinniksoph/fomc.xyz" target="_blank">View on GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="simulator.js"></script>
+</body>
+</html> 

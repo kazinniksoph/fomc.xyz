@@ -38,7 +38,7 @@ header h1 {
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--primary-color);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     line-height: 1.1;
 }
 
@@ -241,4 +241,95 @@ footer {
 
 .hidden {
     display: none;
+}
+
+.disclaimer {
+    background: #F9FAFB;
+    border-top: 1px solid var(--border-color);
+    padding: 3rem 2rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.disclaimer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.disclaimer-content h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.disclaimer-content p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.disclaimer-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Simulator Page Specific Styles */
+.simulator-page {
+    background-color: #F9FAFB;
+}
+
+.top-nav {
+    background: white;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.nav-mascot {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    margin-right: 0.75rem;
+}
+
+.simulator-main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#simulation-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.phase.active {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.phase.completed {
+    color: #10B981;
+    text-decoration: line-through;
 } 
