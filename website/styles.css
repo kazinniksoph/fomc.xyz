@@ -1,11 +1,13 @@
 :root {
-    --primary-color: #000000;
-    --secondary-color: #1d1d1f;
-    --accent-color: #0071e3;
-    --text-color: #1d1d1f;
-    --background-color: #ffffff;
-    --border-color: #d2d2d7;
-    --hover-color: #0077ED;
+    --primary-color: #1F2D3D;  /* navy */
+    --secondary-color: #3F6AB2; /* blue */
+    --accent-color: #3F6AB2;
+    --text-color: #333333;
+    --background-color: #FFFFFF;
+    --border-color: #E5E7EB;
+    --hover-color: #1F2D3D;
+    --spacing-base: 1rem;
+    --transition-speed: 0.2s;
 }
 
 * {
@@ -16,10 +18,11 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Icons', sans-serif;
-    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    font-size: 16px;
 }
 
 header {
@@ -60,8 +63,8 @@ header p {
     grid-template-columns: 300px 1fr;
     gap: 2rem;
     background: var(--background-color);
-    border-radius: 18px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     border: 1px solid var(--border-color);
     overflow: hidden;
 }
@@ -69,24 +72,24 @@ header p {
 .simulation-controls {
     padding: 2rem;
     border-right: 1px solid var(--border-color);
-    background: #f5f5f7;
+    background: #F9FAFB;
 }
 
 #startSimulation {
     width: 100%;
-    padding: 12px 24px;
-    background-color: var(--accent-color);
+    padding: 0.75em 1.5em;
+    background-color: var(--primary-color);
     color: white;
     border: none;
-    border-radius: 980px;
+    border-radius: 6px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all var(--transition-speed) ease;
 }
 
 #startSimulation:hover {
-    background-color: var(--hover-color);
+    background-color: var(--secondary-color);
     transform: scale(1.02);
 }
 
@@ -98,7 +101,7 @@ header p {
     margin-top: 2rem;
 }
 
-.meeting-phases h3 {
+.meeting-phases h3, #discussion-feed h3, #voting-results h3, #fomc-statement h3 {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -140,11 +143,12 @@ header p {
 }
 
 #discussion-feed, #voting-results, #fomc-statement {
-    background: #f5f5f7;
+    background: #F9FAFB;
     padding: 1.5rem;
     border-radius: 12px;
     min-height: 200px;
     border: 1px solid var(--border-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .discussion-entry {
@@ -153,10 +157,11 @@ header p {
     background: white;
     border-radius: 8px;
     border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .discussion-entry strong {
-    color: var(--accent-color);
+    color: var(--secondary-color);
     display: block;
     margin-bottom: 0.5rem;
 }
@@ -192,4 +197,16 @@ header p {
 
 .mascot {
     animation: mascotEntrance 0.8s ease-out;
+}
+
+/* Update link styles */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+}
+
+a:hover,
+a:focus {
+    color: var(--primary-color);
 } 
