@@ -46,7 +46,7 @@ header p {
     font-size: 1.5rem;
     color: var(--text-color);
     max-width: 800px;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto 2rem auto;
     line-height: 1.4;
     opacity: 0.9;
 }
@@ -76,22 +76,23 @@ header p {
 
 #startSimulation {
     display: inline-block;
-    padding: 1.2em 2.4em;
-    font-size: 1.2rem;
+    padding: 0.8em 1.6em;
+    font-size: 1.3rem;
     font-weight: 600;
     color: white;
-    background-color: #2B44FF;
+    background-color: #4A7DFF;
     border: none;
     border-radius: 100px;
     cursor: pointer;
     transition: all var(--transition-speed) ease;
     text-decoration: none;
-    box-shadow: 0 4px 12px rgba(43, 68, 255, 0.2);
+    box-shadow: 0 4px 12px rgba(74, 125, 255, 0.2);
 }
 
 #startSimulation:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(43, 68, 255, 0.3);
+    background-color: #5C8AFF;
+    box-shadow: 0 6px 16px rgba(74, 125, 255, 0.3);
 }
 
 #startSimulation .button-icon {
@@ -183,9 +184,9 @@ header p {
 }
 
 .mascot-image {
-    width: 240px;
+    width: 320px;
     height: auto;
-    border-radius: 30px;
+    border-radius: 36px;
     box-shadow: 0 20px 40px rgba(31, 45, 61, 0.1);
 }
 
