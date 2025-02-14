@@ -12,19 +12,18 @@
         <div class="mascot">
             <img src="images/mascot.png" alt="FOMC.xyz Mascot" class="mascot-image">
         </div>
-        <h1>FOMC Meeting Simulator</h1>
-        <p>Experience how monetary policy decisions are made through AI-powered simulations of Federal Open Market Committee meetings.</p>
+        <h1>Build Your Economic Understanding</h1>
+        <p>Experience how monetary policy decisions are made through AI-powered simulations of Federal Open Market Committee meetings. Join thousands of people learning about the Federal Reserve.</p>
+        <button id="startSimulation">
+            Start simulating for free
+            <span class="button-icon">→</span>
+        </button>
     </header>
 
     <main>
-        <section id="simulator">
+        <section id="simulator" class="hidden">
             <div id="simulation-container">
                 <div class="simulation-controls">
-                    <button id="startSimulation">
-                        <span class="button-text">Start New Meeting</span>
-                        <span class="button-icon">→</span>
-                    </button>
-                    
                     <div class="meeting-phases">
                         <h3>Meeting Progress</h3>
                         <ol>
@@ -37,8 +36,8 @@
                     </div>
 
                     <div class="simulation-info">
-                        <h3>About This Simulation</h3>
-                        <p>This simulator uses advanced AI to recreate FOMC meeting dynamics, incorporating real economic data and historical policy patterns.</p>
+                        <h3>About the Simulator</h3>
+                        <p>This simulator uses AI to recreate FOMC meeting dynamics, incorporating real economic data and historical policy patterns.</p>
                     </div>
                 </div>
 
@@ -47,23 +46,19 @@
                         <h3>Meeting Discussion</h3>
                         <div class="feed-content">
                             <div class="welcome-message">
-                                Click "Start New Meeting" to begin the simulation.
+                                The simulation will begin shortly...
                             </div>
                         </div>
                     </div>
 
                     <div id="voting-results">
                         <h3>Voting Results</h3>
-                        <div class="results-content">
-                            <!-- Voting results will appear here -->
-                        </div>
+                        <div class="results-content"></div>
                     </div>
 
                     <div id="fomc-statement">
                         <h3>FOMC Statement</h3>
-                        <div class="statement-content">
-                            <!-- Final statement will appear here -->
-                        </div>
+                        <div class="statement-content"></div>
                     </div>
                 </div>
             </div>

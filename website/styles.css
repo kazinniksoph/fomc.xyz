@@ -27,29 +27,28 @@ body {
 
 header {
     text-align: center;
-    padding: 6rem 2rem 4rem;
-    background: var(--background-color);
-    border-bottom: 1px solid var(--border-color);
-    max-width: 800px;
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom, #ffffff, #f8f9ff);
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 header h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 700;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.02em;
     color: var(--primary-color);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.1;
 }
 
 header p {
-    font-size: 1.25rem;
-    color: var(--secondary-color);
-    max-width: 600px;
-    margin: 0 auto;
-    opacity: 0.8;
-    line-height: 1.6;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.4;
+    opacity: 0.9;
 }
 
 #simulator {
@@ -72,29 +71,36 @@ header p {
 .simulation-controls {
     padding: 2rem;
     border-right: 1px solid var(--border-color);
-    background: #F9FAFB;
+    background: var(--background-color);  /* changed from #F9FAFB */
 }
 
 #startSimulation {
-    width: 100%;
-    padding: 0.75em 1.5em;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
+    display: inline-block;
+    padding: 1.2em 2.4em;
+    font-size: 1.2rem;
     font-weight: 600;
+    color: white;
+    background-color: #2B44FF;
+    border: none;
+    border-radius: 100px;
     cursor: pointer;
     transition: all var(--transition-speed) ease;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(43, 68, 255, 0.2);
 }
 
 #startSimulation:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.02);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(43, 68, 255, 0.3);
 }
 
-#startSimulation:active {
-    transform: scale(0.98);
+#startSimulation .button-icon {
+    margin-left: 0.5em;
+    transition: transform 0.2s ease;
+}
+
+#startSimulation:hover .button-icon {
+    transform: translateX(4px);
 }
 
 .meeting-phases {
@@ -143,21 +149,21 @@ header p {
 }
 
 #discussion-feed, #voting-results, #fomc-statement {
-    background: #F9FAFB;
+    background: var(--background-color);  /* changed from #F9FAFB */
     padding: 1.5rem;
     border-radius: 12px;
     min-height: 200px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 12px rgba(31, 45, 61, 0.05);  /* using navy color with opacity */
 }
 
 .discussion-entry {
     margin-bottom: 1rem;
-    padding: 1rem;
-    background: white;
+    padding: 1.5rem;
+    background: #F9FAFB;  /* switched with container background */
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 6px rgba(31, 45, 61, 0.05);
 }
 
 .discussion-entry strong {
@@ -168,19 +174,19 @@ header p {
 
 /* Add these styles for the mascot */
 .mascot {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     transition: transform 0.3s ease;
 }
 
 .mascot:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .mascot-image {
-    width: 120px;
+    width: 240px;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(31, 45, 61, 0.1);
 }
 
 /* Add a subtle animation for the mascot on page load */
@@ -209,4 +215,29 @@ a {
 a:hover,
 a:focus {
     color: var(--primary-color);
+}
+
+/* Update footer styles */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-color);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.simulation-info {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #F9FAFB;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.hidden {
+    display: none;
 } 
